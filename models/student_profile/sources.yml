@@ -1,0 +1,8 @@
+version: 2
+
+sources:
+  - name: studentdata
+    database: STUDENT_GEN_DATA
+    schema: POSTGRES_PUBLIC
+    tables:
+      - name: student_enrollment_modeling

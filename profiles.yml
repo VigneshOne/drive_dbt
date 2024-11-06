@@ -1,0 +1,13 @@
+school_dbt:
+  outputs:
+    dev:
+      account: "{{ env_var('DBT_ACCOUNT') }}"
+      database: STUDENT_GEN_DATA
+      password: "{{ env_var('DBT_PASS') }}"
+      role: SYSADMIN
+      schema: STUDENT_PROFILE
+      threads: 1
+      type: snowflake
+      user: "{{ env_var('DBT_USER') }}"
+      warehouse: SCHOOL_DATA_WH
+  target: dev

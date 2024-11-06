@@ -1,0 +1,12 @@
+
+version: 2
+
+models:
+  - name: student_enrollment_modeling
+    description: "A school dbt model"
+    columns:
+      - name: _fivetran_id
+        description: "The primary key for this table"
+        data_tests:
+          - unique
+          - not_null
